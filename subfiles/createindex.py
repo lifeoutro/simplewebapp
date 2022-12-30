@@ -1,5 +1,5 @@
 import os
-AppVer = '2'
+AppVer = '3'
 hnt = os.popen('hostname')
 hn = hnt.read()
 IPt =  os.popen('hostname -I')
