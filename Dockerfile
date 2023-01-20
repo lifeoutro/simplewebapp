@@ -1,6 +1,10 @@
-FROM php:8-cli
+FROM php:apache
+RUN apt update
+RUN apt install dnsutils -y
+RUN apt install telnet -y
 #RUN mkdir /var/www/html
-ENTRYPOINT php -S 0.0.0.0:8000 -t /app
+COPY ./subfiles/index.php /var/www/html/
+#ENTRYPOINT php -S 0.0.0.0:80 -t /app
 #
 #FROM httpd:2.4-alpine
 #COPY ./subfiles/createindex.py /tmp

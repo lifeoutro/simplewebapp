@@ -1,4 +1,4 @@
-<html> <p>This is app version 4 </p>
+<html> <p>This is app version 5 </p>
 <?php $hn = gethostname();
 $remote = $_SERVER['REMOTE_ADDR'];
 ?>
